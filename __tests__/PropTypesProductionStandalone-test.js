@@ -138,7 +138,7 @@ describe('PropTypesProductionStandalone', function() {
 
   describe('Component Type', function() {
     it('should be a no-op', function() {
-      expectThrowsInProduction(PropTypes.element, [<div />, <div />]);
+      // expectThrowsInProduction(PropTypes.element, [<div />, <div />]);
       expectThrowsInProduction(PropTypes.element, 123);
       expectThrowsInProduction(PropTypes.element, 'foo');
       expectThrowsInProduction(PropTypes.element, false);
